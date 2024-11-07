@@ -1,0 +1,9 @@
+# Applied population ecology
+
+Here, I will add text and figures about applied population ecology. This include harvest models, PVA and MPA, and a short snipet about IUCN red listing.
+
+::: callout-tip
+## Does it work in books!
+
+Just testing if this also works nicely with Quarto books (as it does with web pages)
+:::

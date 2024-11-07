@@ -1,9 +1,3 @@
 # Preface {.unnumbered}
 
-This is a Quarto book.
-
-To learn more about Quarto books visit <https://quarto.org/docs/books>.
-
-```{r}
-1 + 1
-```
+This book will serve as a digital compendium in ØKO2002 Population eecology at Nord University. The course is part of the bachelor education in [nature management](https://www.nord.no/en/studies/nature-management-bachelors-programme), and the students are (mostly) taking the course in their third study semester. It is not intended to replace the text book we are using in the course (see Leganto for the reading list), but rather to supplement it. There is, however, one main part that is not well covered in the text book and for which this digital compendium will be the main source. This is chapter XX - Applied Popluation Ecology.

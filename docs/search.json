@@ -1,0 +1,82 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Population Ecology",
+    "section": "",
+    "text": "Preface\nThis book will serve as a digital compendium in ØKO2002 Population eecology at Nord University. The course is part of the bachelor education in nature management, and the students are (mostly) taking the course in their third study semester. It is not intended to replace the text book we are using in the course (see Leganto for the reading list), but rather to supplement it. There is, however, one main part that is not well covered in the text book and for which this digital compendium will be the main source. This is chapter XX - Applied Popluation Ecology.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "2  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "References"
+    ]
+  },
+  {
+    "objectID": "The_organism.html",
+    "href": "The_organism.html",
+    "title": "2  The organism and its environment",
+    "section": "",
+    "text": "Here, I will add text and figures supplementing chapters 5, 7 and 10",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>The organism and its environment</span>"
+    ]
+  },
+  {
+    "objectID": "Species_interactions.html",
+    "href": "Species_interactions.html",
+    "title": "4  Species interactions",
+    "section": "",
+    "text": "Here, I will add text and figures supplementing chapters 12 - 14",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Species interactions</span>"
+    ]
+  },
+  {
+    "objectID": "The_population.html",
+    "href": "The_population.html",
+    "title": "3  The population",
+    "section": "",
+    "text": "Here, I will add content related to chapters 8, 9 and 11",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>The population</span>"
+    ]
+  },
+  {
+    "objectID": "Applied_popec.html",
+    "href": "Applied_popec.html",
+    "title": "5  Applied population ecology",
+    "section": "",
+    "text": "Here, I will add text and figures about applied population ecology. This include harvest models, PVA and MPA, and a short snipet about IUCN red listing.\n\n\n\n\n\n\nDoes it work in books!\n\n\n\nJust testing if this also works nicely with Quarto books (as it does with web pages)",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Applied population ecology</span>"
+    ]
+  }
+]

@@ -1,15 +1,20 @@
 project:
   type: book
+  output-dir: docs
 
 book:
-  title: "PopEcology_NordUni_booklet"
-  author: "Norah Jones"
+  title: "Population Ecology"
+  subtitle: "A gentle introduction"
+  author: "Erlend B. Nilsen"
   date: "7.11.2024"
   chapters:
     - index.qmd
     - intro.qmd
-    - summary.qmd
-    - references.qmd
+    - The_organism.qmd
+    - The_population.qmd
+    - Species_interactions.qmd
+    - Applied_popec.qmd
+    - References.qmd
 
 bibliography: references.bib
 
