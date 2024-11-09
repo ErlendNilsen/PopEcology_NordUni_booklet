@@ -1,0 +1,11 @@
+# The population
+
+Here, I will add content related to chapters 8, 9 and 11
+
+## Density dependence 
+
+Density dependence is a key concept in population ecology, almost to the extent that it could be claimed to be a "law".
+
+```{r}
+
+```
