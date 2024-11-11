@@ -4,19 +4,19 @@
     "href": "index.html",
     "title": "Population Ecology",
     "section": "",
-    "text": "Preface\nThis book will serve as a digital compendium in ØKO2002 Population eecology at Nord University. The course is part of the bachelor education in nature management, and the students are (mostly) taking the course in their third study semester. It is not intended to replace the text book we are using in the course (see Leganto for the reading list), but rather to supplement it. There is, however, one main part that is not well covered in the text book and for which this digital compendium will be the main source. This is chapter XX - Applied Popluation Ecology.",
+    "text": "About the book\nThis book will serve as a digital compendium in ØKO2002 Population eecology at Nord University. The course is part of the bachelor education in Nature Management, and the students are (mostly) taking the course in their third study semester.\nBy reading this booklet, you should get a good overview of the topic population ecology. As a next step there are many more specialized books that you can use to dig further into the topic. In general, it will cover the following topics:\nThe book is currently under construction, and many chapters are still only empty skeletons. For the time being, the book is not intended to replace the text book used in the course - but rather serve as a supplement. There is, however, one main part that is not well covered in the text book and for which this digital compendium will be the main source. This is part “Applied Population Ecology”. These chapters will cover some main application of concepts and theory from the science of population ecology, including harvest of wild vertebrate populations, and the construction of population viability analysis by the use of mathematical simulations. In addition, there is a short chapter about the methodology behind the IUCN red listing process, which relies on population ecology theory.",
     "crumbs": [
-      "Preface"
+      "About the book"
     ]
   },
   {
     "objectID": "intro.html",
     "href": "intro.html",
-    "title": "1  Introduction",
+    "title": "1  Introduction to population ecology",
     "section": "",
-    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "text": "In ecology, a population is usually defined as “a group of individuals of the same species living in the same area”. This very concept therefore delineate which organisms should be included in any one population by taxa (i.e. only organisms from the same species are considered to be of the same population), and by area (i.e. only organisms from the same area are considered to be of the same population).",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to population ecology</span>"
     ]
   },
   {
@@ -42,31 +42,31 @@
   {
     "objectID": "The_organism.html",
     "href": "The_organism.html",
-    "title": "2  The organism and its environment",
+    "title": "Individuals and their adaption to their environment",
     "section": "",
-    "text": "Here, I will add text and figures supplementing chapters 5, 7 and 10",
+    "text": "In this part, I will cover three main concepts:\n\nEvolution, natural selection and adaptation\nThe evolution of life histories\nMovement ecology, habitat use and habitat selection",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>The organism and its environment</span>"
+      "Individuals and their adaption to their environment"
     ]
   },
   {
     "objectID": "Species_interactions.html",
     "href": "Species_interactions.html",
-    "title": "4  Species interactions",
+    "title": "Species interactions",
     "section": "",
     "text": "Here, I will add text and figures supplementing chapters 12 - 14",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Species interactions</span>"
+      "Species interactions"
     ]
   },
   {
     "objectID": "The_population.html",
     "href": "The_population.html",
-    "title": "3  The population",
+    "title": "The dynamics of populations",
     "section": "",
-    "text": "3.1 Density dependence\nDensity dependence is a key concept in population ecology, almost to the extent that it could be claimed to be a “law”.",
+    "text": "Density dependence\nDensity dependence is a key concept in population ecology, almost to the extent that it could be claimed to be a “law”.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>The population</span>"
+      "The dynamics of populations"
     ]
   },
   {
@@ -87,6 +87,212 @@
     "text": "5.1.1 Principles of sustainable harvest\nInclude statements from sustainability papers and Sutherland in wildlife biology. Discuss briefly harvestable surpluss and Norwegian law\n\n\n5.1.2 Additive and compensatory harvest\nDiscuss compensation and additivity of harvest mortality (Figure 5.1).\n\ndata_mortality &lt;- tibble(Hm = rep(c(0, 50, 100), 3), \n                         S = c(0.5, 0.25, 0, 0.5, 0.45, 0,  0.5, 0.5, 0), \n                         model = rep(c(\"Additive\", \n                                       \"Partial\", \n                                       \"Compensatory\"), \n                                  each = 3))\n                        \n\nggplot(data = data_mortality, aes(x = Hm, y = S)) + \n      geom_line(size = 2, colour =\"#A9C47F\") + \n      facet_wrap(~model) +\n      theme(text = element_text(size = 17)) +\n      ylab(\"Annual survival (S)\") +\n      xlab(\"Harvest mortality (%)\")\n\n\n\n\n\n\n\nFigure 5.1: Three contrasting hypothesis for the effects of harvest mortality on annual survival: Additive, partial compensation and full compensation, respctively. For illustrative purposes, it is assumed that the threshold c where mortality becomes additive in all models is located at 50% harvest mortality.\n\n\n\n\n\n\n\n5.1.3 The concept of Maximum Sustainable Yield (MSY)\nThe concept of Maximum Sustainable Yield (MSY) dates back to the 1930-ties (refs)…\nThe concept is tightly connected to the concept of density dependence, introduced in chapter 2.\nThe theoretical yield peak is located exactly when the population size N is at 0.5 * K (Figure 5.2).\n\nK &lt;- 500\nr &lt;- 0.3\n\nMSY_data &lt;- tibble(N = seq(1:500), \n                   dN_dt = r*N * (1 - (N/K))) \n\nggplot(data = MSY_data, aes(x = N, y = dN_dt)) +\n              geom_line(size = 2, colour =\"#A9C47F\") +\n              #theme_minimal() +\n              theme(text = element_text(size = 15)) +\n              ylim(0, max(MSY_data$dN_dt + 10)) +\n              xlab(\"Population size (N)\") +\n              ylab(\"Annual population increment (dN/dt)\")  \n\n\n\n\n\n\n\nFigure 5.2: MSY curve for a hypothetical population, assuming K = 500 and r = 0.3\n\n\n\n\n\nExplain why MSY was fragile and need to be further developed.\n\n\n5.1.4 Harvesting stochastic populations\nDiscuss why stoachasticity matters for harvest models.\nThe - tune in on contrasting three main types:\n\nConstant quota: In this approach, the quota is fixed and remains the same in all years regardless of what the population size turns out to be.\nConstant proportion: Also called proportional harvest. In this approach, the quota in terms of proportion of the population that is removed is constant. For instance, each year 30% of the population is removed through harvest.\nThreshold harvesting: Under this approach, no hunting will be allowed if the population is below a predefined threshold. When the population size is above the threshold, harvest will take place. In the traditional form for threshold harvesting, the population will be harvested down to the threshold. In proportional threshold harvest\n\n\n\n5.1.5 Harvesting age- and stage structured populations\nDescribe how populations of (mainly) long-lived species will be dependent on the age- and sex composition of the harvest off take. Use simulations to showcase + perhaps some real data from moose or red deer in Norway.\n\n\n5.1.6 Harvest management is more than ecology\nDiscuss various studies of hunter efficiency under different conditions, and introduce the concept of Harvest Management Strategy Evaluation (MSE).",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Applied population ecology</span>"
+    ]
+  },
+  {
+    "objectID": "Adaptation_Selection.html",
+    "href": "Adaptation_Selection.html",
+    "title": "2  The organism and its environment",
+    "section": "",
+    "text": "Here, I will add text and figures supplementing chapters 5, 7 and 10",
+    "crumbs": [
+      "Individuals and their adaption to their environment",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>The organism and its environment</span>"
+    ]
+  },
+  {
+    "objectID": "Population_growth.html",
+    "href": "Population_growth.html",
+    "title": "5  The growth of populations with unlimited resources",
+    "section": "",
+    "text": "Here, basic population models will be introduced",
+    "crumbs": [
+      "The dynamics of populations",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>The growth of populations with unlimited resources</span>"
+    ]
+  },
+  {
+    "objectID": "Harvesting.html",
+    "href": "Harvesting.html",
+    "title": "12  Harvesting wild vertebrate populations",
+    "section": "",
+    "text": "12.1 Principles of sustainable harvest\nInclude statements from sustainability papers and Sutherland in wildlife biology. Discuss briefly harvestable surpluss and Norwegian law",
+    "crumbs": [
+      "Applied population ecology",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Harvesting wild vertebrate populations</span>"
+    ]
+  },
+  {
+    "objectID": "Harvesting.html#harvesting-wild-vertebrate-populations",
+    "href": "Harvesting.html#harvesting-wild-vertebrate-populations",
+    "title": "12  Harvesting wild vertebrate populations",
+    "section": "",
+    "text": "12.1.1 Principles of sustainable harvest\nInclude statements from sustainability papers and Sutherland in wildlife biology. Discuss briefly harvestable surpluss and Norwegian law\n\n\n12.1.2 Additive and compensatory harvest\nDiscuss compensation and additivity of harvest mortality (Figure 12.1).\n\ndata_mortality &lt;- tibble(Hm = rep(c(0, 50, 100), 3), \n                         S = c(0.5, 0.25, 0, 0.5, 0.45, 0,  0.5, 0.5, 0), \n                         model = rep(c(\"Additive\", \n                                       \"Partial\", \n                                       \"Compensatory\"), \n                                  each = 3))\n                        \n\nggplot(data = data_mortality, aes(x = Hm, y = S)) + \n      geom_line(size = 2, colour =\"#A9C47F\") + \n      facet_wrap(~model) +\n      theme(text = element_text(size = 17)) +\n      ylab(\"Annual survival (S)\") +\n      xlab(\"Harvest mortality (%)\")\n\n\n\n\n\n\n\nFigure 12.1: Three contrasting hypothesis for the effects of harvest mortality on annual survival: Additive, partial compensation and full compensation, respctively. For illustrative purposes, it is assumed that the threshold c where mortality becomes additive in all models is located at 50% harvest mortality.\n\n\n\n\n\n\n\n12.1.3 The concept of Maximum Sustainable Yield (MSY)\nThe concept of Maximum Sustainable Yield (MSY) dates back to the 1930-ties (refs)…\nThe concept is tightly connected to the concept of density dependence, introduced in chapter 2.\nThe theoretical yield peak is located exactly when the population size N is at 0.5 * K (Figure 12.2).\n\nK &lt;- 500\nr &lt;- 0.3\n\nMSY_data &lt;- tibble(N = seq(1:500), \n                   dN_dt = r*N * (1 - (N/K))) \n\nggplot(data = MSY_data, aes(x = N, y = dN_dt)) +\n              geom_line(size = 2, colour =\"#A9C47F\") +\n              #theme_minimal() +\n              theme(text = element_text(size = 15)) +\n              ylim(0, max(MSY_data$dN_dt + 10)) +\n              xlab(\"Population size (N)\") +\n              ylab(\"Annual population increment (dN/dt)\")  \n\n\n\n\n\n\n\nFigure 12.2: MSY curve for a hypothetical population, assuming K = 500 and r = 0.3\n\n\n\n\n\nExplain why MSY was fragile and need to be further developed.\n\n\n12.1.4 Harvesting stochastic populations\nDiscuss why stoachasticity matters for harvest models.\nThe - tune in on contrasting three main types:\n\nConstant quota: In this approach, the quota is fixed and remains the same in all years regardless of what the population size turns out to be.\nConstant proportion: Also called proportional harvest. In this approach, the quota in terms of proportion of the population that is removed is constant. For instance, each year 30% of the population is removed through harvest.\nThreshold harvesting: Under this approach, no hunting will be allowed if the population is below a predefined threshold. When the population size is above the threshold, harvest will take place. In the traditional form for threshold harvesting, the population will be harvested down to the threshold. In proportional threshold harvest\n\n\n\n12.1.5 Harvesting age- and stage structured populations\nDescribe how populations of (mainly) long-lived species will be dependent on the age- and sex composition of the harvest off take. Use simulations to showcase + perhaps some real data from moose or red deer in Norway.\n\n\n12.1.6 Harvest management is more than ecology\nDiscuss various studies of hunter efficiency under different conditions, and introduce the concept of Harvest Management Strategy Evaluation (MSE).",
+    "crumbs": [
+      "Applied population ecology",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Harvesting wild vertebrate populations</span>"
+    ]
+  },
+  {
+    "objectID": "Applied_population_ecology.html",
+    "href": "Applied_population_ecology.html",
+    "title": "Applied population ecology",
+    "section": "",
+    "text": "Here, I will add text and figures about applied population ecology. This include harvest models, PVA and MPA, and a short snipet about IUCN red listing.\n\n\n\n\n\n\nRead this chapter carefully!\n\n\n\nThis chapter is less directly related to the content in the text book we use in our course (ØKO2002), but nonetheless a central part of the course curriculum. So whereas the other chapters are intended so serve as back-up reading that will (hopefully) help you understand the content in the text book and lecturer even better, this chapter has a more fully developed content that you should read and understand.",
+    "crumbs": [
+      "Applied population ecology"
+    ]
+  },
+  {
+    "objectID": "Life_histories.html",
+    "href": "Life_histories.html",
+    "title": "3  The evolution of life histories",
+    "section": "",
+    "text": "Here, I will add text and figures supplementing chapters 5, 7 and 10",
+    "crumbs": [
+      "Individuals and their adaption to their environment",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>The evolution of life histories</span>"
+    ]
+  },
+  {
+    "objectID": "Movement_ecology.html",
+    "href": "Movement_ecology.html",
+    "title": "4  Movement ecology, habitat use and habitat selection",
+    "section": "",
+    "text": "Here, I will add text and figures supplementing chapters 5, 7 and 10",
+    "crumbs": [
+      "Individuals and their adaption to their environment",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Movement ecology, habitat use and habitat selection</span>"
+    ]
+  },
+  {
+    "objectID": "Predation.html",
+    "href": "Predation.html",
+    "title": "6  Species interactions",
+    "section": "",
+    "text": "Here, I will add text and figures supplementing chapters 12 - 14",
+    "crumbs": [
+      "Species interactions",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Predation</span>"
+    ]
+  },
+  {
+    "objectID": "Competition.html",
+    "href": "Competition.html",
+    "title": "7  Competition",
+    "section": "",
+    "text": "Here, I will add text and figures supplementing chapters 12 - 14",
+    "crumbs": [
+      "Species interactions",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Competition</span>"
+    ]
+  },
+  {
+    "objectID": "Non_lethal.html",
+    "href": "Non_lethal.html",
+    "title": "8  Non-lethal effects of predation and the landscape of fear",
+    "section": "",
+    "text": "Here, I will add text and figures supplementing chapters 12 - 14",
+    "crumbs": [
+      "Species interactions",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Non-lethal effects of predation and the landscape of fear</span>"
+    ]
+  },
+  {
+    "objectID": "Density_dependence.html",
+    "href": "Density_dependence.html",
+    "title": "6  Density dependent population growht",
+    "section": "",
+    "text": "Here, basic population models will be introduced",
+    "crumbs": [
+      "The dynamics of populations",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Density dependent population growht</span>"
+    ]
+  },
+  {
+    "objectID": "Age_structured.html",
+    "href": "Age_structured.html",
+    "title": "7  The dynamics of age- and stage-structured populations",
+    "section": "",
+    "text": "Here, basic models for age- and stage structured populations will be introduced",
+    "crumbs": [
+      "The dynamics of populations",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>The dynamics of age- and stage-structured populations</span>"
+    ]
+  },
+  {
+    "objectID": "Metapopulation_dynamics.html",
+    "href": "Metapopulation_dynamics.html",
+    "title": "8  Introduction to metapopulations",
+    "section": "",
+    "text": "Here, basic models for metapopulation dynamics will be introduced",
+    "crumbs": [
+      "The dynamics of populations",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Introduction to metapopulations</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#how-to-use-the-book",
+    "href": "index.html#how-to-use-the-book",
+    "title": "Population Ecology",
+    "section": "How to use the book",
+    "text": "How to use the book\nThis booklet is created using Quarto in RStudio. As you can see, the R-code that produce the output (figures, tables, numbers etc) is displayed alongside with the more general text. The intention is that you should learn some basic R alongside your efforts to learn the core concepts in population ecology. At the end of each chapter, there is a set of exercises that you can use to check whether you have understood the content presented in the respective chapter.\n\n\n\nHow to contribute?\nThere are several ways to contribute to improving this booklet. First, by showing up in the class and discussing the content with me and your class mates, you will give me valuable insight that can be used to improve the content. Second, you could send me an e-mail (erlend.b.nilsen@nord-no). Third, if you are familiar with GitHub you could either submit pull requests or raise an issue.",
+    "crumbs": [
+      "About the book"
+    ]
+  },
+  {
+    "objectID": "index.html#how-to-use-this-book",
+    "href": "index.html#how-to-use-this-book",
+    "title": "Population Ecology",
+    "section": "How to use this book",
+    "text": "How to use this book\nThis booklet is created using Quarto in RStudio. As you can see, the R-code that produce the output (figures, tables, numbers etc) is displayed alongside with the more general text. The intention is that you should learn some basic R alongside your efforts to learn the core concepts in population ecology. At the end of each chapter, there is a set of exercises that you can use to check whether you have understood the content presented in the respective chapter.\n\n\n\n\nHow to contribute?\nThere are several ways to contribute to improving this booklet. First, by showing up in the class and discussing the content with me and your class mates, you will give me valuable insight that can be used to improve the content. Second, you could send me an e-mail (erlend.b.nilsen@nord-no). Third, if you are familiar with GitHub you could either submit pull requests or raise an issue. The link to the GitHub repo could be found in the menu line to the right.",
+    "crumbs": [
+      "About the book"
+    ]
+  },
+  {
+    "objectID": "Harvesting.html#additive-and-compensatory-harvest",
+    "href": "Harvesting.html#additive-and-compensatory-harvest",
+    "title": "12  Harvesting wild vertebrate populations",
+    "section": "12.2 Additive and compensatory harvest",
+    "text": "12.2 Additive and compensatory harvest\nDiscuss compensation and additivity of harvest mortality (Figure 12.1).\n\ndata_mortality &lt;- tibble(Hm = rep(c(0, 50, 100), 3), \n                         S = c(0.5, 0.25, 0, 0.5, 0.45, 0,  0.5, 0.5, 0), \n                         model = rep(c(\"Additive\", \n                                       \"Partial\", \n                                       \"Compensatory\"), \n                                  each = 3))\n                        \n\nggplot(data = data_mortality, aes(x = Hm, y = S)) + \n      geom_line(size = 2, colour =\"#A9C47F\") + \n      facet_wrap(~model) +\n      theme(text = element_text(size = 17)) +\n      ylab(\"Annual survival (S)\") +\n      xlab(\"Harvest mortality (%)\")\n\n\n\n\n\n\n\nFigure 12.1: Three contrasting hypothesis for the effects of harvest mortality on annual survival: Additive, partial compensation and full compensation, respctively. For illustrative purposes, it is assumed that the threshold c where mortality becomes additive in all models is located at 50% harvest mortality.",
+    "crumbs": [
+      "Applied population ecology",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Harvesting wild vertebrate populations</span>"
+    ]
+  },
+  {
+    "objectID": "Harvesting.html#the-concept-of-maximum-sustainable-yield-msy",
+    "href": "Harvesting.html#the-concept-of-maximum-sustainable-yield-msy",
+    "title": "12  Harvesting wild vertebrate populations",
+    "section": "12.3 The concept of Maximum Sustainable Yield (MSY)",
+    "text": "12.3 The concept of Maximum Sustainable Yield (MSY)\nThe concept of Maximum Sustainable Yield (MSY) dates back to the 1930-ties (refs)…\nThe concept is tightly connected to the concept of density dependence, introduced in chapter 2.\nThe theoretical yield peak is located exactly when the population size N is at 0.5 * K (Figure 12.2).\n\nK &lt;- 500\nr &lt;- 0.3\n\nMSY_data &lt;- tibble(N = seq(1:500), \n                   dN_dt = r*N * (1 - (N/K))) \n\nggplot(data = MSY_data, aes(x = N, y = dN_dt)) +\n              geom_line(size = 2, colour =\"#A9C47F\") +\n              #theme_minimal() +\n              theme(text = element_text(size = 15)) +\n              ylim(0, max(MSY_data$dN_dt + 10)) +\n              xlab(\"Population size (N)\") +\n              ylab(\"Annual population increment (dN/dt)\")  \n\n\n\n\n\n\n\nFigure 12.2: MSY curve for a hypothetical population, assuming K = 500 and r = 0.3\n\n\n\n\n\nExplain why MSY was fragile and need to be further developed.",
+    "crumbs": [
+      "Applied population ecology",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Harvesting wild vertebrate populations</span>"
+    ]
+  },
+  {
+    "objectID": "Harvesting.html#harvesting-stochastic-populations",
+    "href": "Harvesting.html#harvesting-stochastic-populations",
+    "title": "12  Harvesting wild vertebrate populations",
+    "section": "12.4 Harvesting stochastic populations",
+    "text": "12.4 Harvesting stochastic populations\nDiscuss why stoachasticity matters for harvest models.\nThe - tune in on contrasting three main types:\n\nConstant quota: In this approach, the quota is fixed and remains the same in all years regardless of what the population size turns out to be.\nConstant proportion: Also called proportional harvest. In this approach, the quota in terms of proportion of the population that is removed is constant. For instance, each year 30% of the population is removed through harvest.\nThreshold harvesting: Under this approach, no hunting will be allowed if the population is below a predefined threshold. When the population size is above the threshold, harvest will take place. In the traditional form for threshold harvesting, the population will be harvested down to the threshold. In proportional threshold harvest\n\n\n12.4.1 Harvesting age- and stage structured populations\nDescribe how populations of (mainly) long-lived species will be dependent on the age- and sex composition of the harvest off take. Use simulations to showcase + perhaps some real data from moose or red deer in Norway.",
+    "crumbs": [
+      "Applied population ecology",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Harvesting wild vertebrate populations</span>"
+    ]
+  },
+  {
+    "objectID": "Harvesting.html#harvest-management-is-more-than-ecology",
+    "href": "Harvesting.html#harvest-management-is-more-than-ecology",
+    "title": "12  Harvesting wild vertebrate populations",
+    "section": "12.5 Harvest management is more than ecology",
+    "text": "12.5 Harvest management is more than ecology\nDiscuss various studies of hunter efficiency under different conditions, and introduce the concept of Harvest Management Strategy Evaluation (MSE).",
+    "crumbs": [
+      "Applied population ecology",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Harvesting wild vertebrate populations</span>"
     ]
   }
 ]

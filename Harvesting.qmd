@@ -1,4 +1,4 @@
-# Applied population ecology
+# Harvesting wild vertebrate populations
 
 ```{r}
 #| echo: false
@@ -8,23 +8,13 @@
 library(tidyverse)
 ```
 
-Here, I will add text and figures about applied population ecology. This include harvest models, PVA and MPA, and a short snipet about IUCN red listing.
-
-::: callout-important
-## Read this chapter carefully!
-
-This chapter is less directly related to the content in the text book we use in our course (ØKO2002), but nonetheless a central part of the course curriculum. So whereas the other chapters are intended so serve as back-up reading that will (hopefully) help you understand the content in the text book and lecturer even better, this chapter has a more fully developed content that you should read and understand.
-:::
-
-## Harvesting wild vertebrate populations
-
 One classical application of population ecology theory is related to harvesting of wild vertebrate populations, including those that live in the oceans (i.e. fisheries!). In this chapter, the focus will be on harvesting of terrestrial vertebrate - including both various species of game birds as welll as mammals of various size and taxa. In the chapter, I will show how the theory surrounding harvest management have matured over the years, and now consists of mature and well-developed body of literature. Importantly, much of the development has happened in parallel in terrestrial ecology and in the fisheries. Marine fisheries are often associated with substantial economic interests, and thus for at least some marine fisheries substantial resources have been allocated to produce better models (and data) to support the quota setting process. The same situation applies to some terrestrial harvest management systems (e.g. moose management in Scandinavia), but there are also many hunted populations for which there is a lack of data and knowledge. We often refer to these systems as data deficient or data poor systems.
 
-### Principles of sustainable harvest 
+## Principles of sustainable harvest
 
 Include statements from sustainability papers and Sutherland in wildlife biology. Discuss briefly harvestable surpluss and Norwegian law
 
-### Additive and compensatory harvest
+## Additive and compensatory harvest
 
 Discuss compensation and additivity of harvest mortality (@fig-additivity).
 
@@ -55,7 +45,7 @@ ggplot(data = data_mortality, aes(x = Hm, y = S)) +
 
 ```
 
-### The concept of Maximum Sustainable Yield (MSY) 
+## The concept of Maximum Sustainable Yield (MSY)
 
 The concept of Maximum Sustainable Yield (MSY) dates back to the 1930-ties (refs)...
 
@@ -90,7 +80,7 @@ ggplot(data = MSY_data, aes(x = N, y = dN_dt)) +
 
 Explain why MSY was fragile and need to be further developed.
 
-### Harvesting stochastic populations
+## Harvesting stochastic populations
 
 Discuss why stoachasticity matters for harvest models.
 
@@ -106,6 +96,6 @@ The - tune in on contrasting three main types:
 
 Describe how populations of (mainly) long-lived species will be dependent on the age- and sex composition of the harvest off take. Use simulations to showcase + perhaps some real data from moose or red deer in Norway.
 
-### Harvest management is more than ecology
+## Harvest management is more than ecology
 
 Discuss various studies of hunter efficiency under different conditions, and introduce the concept of Harvest Management Strategy Evaluation (MSE).

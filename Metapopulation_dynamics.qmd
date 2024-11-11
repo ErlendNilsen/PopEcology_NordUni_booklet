@@ -1,0 +1,3 @@
+# Introduction to metapopulations
+
+Here, basic models for metapopulation dynamics will be introduced

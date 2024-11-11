@@ -1,3 +1,25 @@
-# Preface {.unnumbered}
+# About the book {.unnumbered}
 
-This book will serve as a digital compendium in ØKO2002 Population eecology at Nord University. The course is part of the bachelor education in [nature management](https://www.nord.no/en/studies/nature-management-bachelors-programme), and the students are (mostly) taking the course in their third study semester. It is not intended to replace the text book we are using in the course (see Leganto for the reading list), but rather to supplement it. There is, however, one main part that is not well covered in the text book and for which this digital compendium will be the main source. This is chapter XX - Applied Popluation Ecology.
+This book will serve as a digital compendium in ØKO2002 Population eecology at [Nord University](https://www.nord.no/en). The course is part of the bachelor education in [Nature Management](https://www.nord.no/en/studies/nature-management-bachelors-programme), and the students are (mostly) taking the course in their third study semester.
+
+By reading this booklet, you should get a good overview of the topic population ecology. As a next step there are many more specialized books that you can use to dig further into the topic. In general, it will cover the following topics:
+
+-   Individuals and their adaptation to their environment
+
+-   The dynamics of populations
+
+-   Species interactions
+
+-   Applied population ecology
+
+The book is currently under construction, and many chapters are still only empty skeletons. For the time being, the book is not intended to replace the text book used in the course - but rather serve as a supplement. There is, however, one main part that is not well covered in the text book and for which this digital compendium will be the main source. This is part "Applied Population Ecology". These chapters will cover some main application of concepts and theory from the science of population ecology, including harvest of wild vertebrate populations, and the construction of population viability analysis by the use of mathematical simulations. In addition, there is a short chapter about the methodology behind the IUCN red listing process, which relies on population ecology theory.
+
+## How to use this book {.unnumbered}
+
+This booklet is created using Quarto in RStudio. As you can see, the R-code that produce the output (figures, tables, numbers etc) is displayed alongside with the more general text. The intention is that you should learn some basic R alongside your efforts to learn the core concepts in population ecology. At the end of each chapter, there is a set of exercises that you can use to check whether you have understood the content presented in the respective chapter.
+
+### 
+
+### How to contribute?  {.unnumbered}
+
+There are several ways to contribute to improving this booklet. First, by showing up in the class and discussing the content with me and your class mates, you will give me valuable insight that can be used to improve the content. Second, you could send me an e-mail (erlend.b.nilsen\@nord-no). Third, if you are familiar with GitHub you could either submit pull requests or raise an issue. The link to the GitHub repo could be found in the menu line to the right.

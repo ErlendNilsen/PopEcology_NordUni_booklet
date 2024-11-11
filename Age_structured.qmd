@@ -1,0 +1,3 @@
+# The dynamics of age- and stage-structured populations
+
+Here, basic models for age- and stage structured populations will be introduced

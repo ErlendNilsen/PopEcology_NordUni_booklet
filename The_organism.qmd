@@ -1,3 +1,9 @@
-# The organism and its environment
+# Individuals and their adaption to their environment
 
-Here, I will add text and figures supplementing chapters 5, 7 and 10
+In this part, I will cover three main concepts:
+
+-   Evolution, natural selection and adaptation
+
+-   The evolution of life histories
+
+-   Movement ecology, habitat use and habitat selection

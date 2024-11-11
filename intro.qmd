@@ -1,9 +1,3 @@
-# Introduction
+# Introduction to population ecology
 
-This is a book created from markdown and executable code.
-
-See @knuth84 for additional discussion of literate programming.
-
-```{r}
-1 + 1
-```
+In ecology, a population is usually defined as "a group of individuals of the same species living in the same area". This very concept therefore delineate which organisms should be included in any one population by taxa (i.e. only organisms from the same species are considered to be of the same population), and by area (i.e. only organisms from the same area are considered to be of the same population).

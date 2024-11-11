@@ -1,0 +1,9 @@
+# Applied population ecology {.unnumbered}
+
+Here, I will add text and figures about applied population ecology. This include harvest models, PVA and MPA, and a short snipet about IUCN red listing.
+
+::: callout-important
+## Read this chapter carefully!
+
+This chapter is less directly related to the content in the text book we use in our course (ØKO2002), but nonetheless a central part of the course curriculum. So whereas the other chapters are intended so serve as back-up reading that will (hopefully) help you understand the content in the text book and lecturer even better, this chapter has a more fully developed content that you should read and understand.
+:::

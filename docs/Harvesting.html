@@ -8,7 +8,7 @@
 
 <meta name="author" content="Erlend B. Nilsen, Nord University">
 
-<title>Population Ecology</title>
+<title>12&nbsp; Harvesting wild vertebrate populations – Population Ecology</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,6 +21,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -31,7 +65,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./intro.html" rel="next">
+<link href="./References.html" rel="next">
+<link href="./Applied_population_ecology.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -81,7 +116,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">About the book</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Applied_population_ecology.html">Applied population ecology</a></li><li class="breadcrumb-item"><a href="./Harvesting.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Harvesting wild vertebrate populations</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -111,7 +146,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">About the book</span></a>
   </div>
 </li>
@@ -225,7 +260,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Harvesting.html" class="sidebar-item-text sidebar-link">
+  <a href="./Harvesting.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Harvesting wild vertebrate populations</span></span></a>
   </div>
 </li>
@@ -247,36 +282,29 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#about-the-book" id="toc-about-the-book" class="nav-link active" data-scroll-target="#about-the-book">About the book</a>
+  <li><a href="#principles-of-sustainable-harvest" id="toc-principles-of-sustainable-harvest" class="nav-link active" data-scroll-target="#principles-of-sustainable-harvest"><span class="header-section-number">12.1</span> Principles of sustainable harvest</a></li>
+  <li><a href="#additive-and-compensatory-harvest" id="toc-additive-and-compensatory-harvest" class="nav-link" data-scroll-target="#additive-and-compensatory-harvest"><span class="header-section-number">12.2</span> Additive and compensatory harvest</a></li>
+  <li><a href="#the-concept-of-maximum-sustainable-yield-msy" id="toc-the-concept-of-maximum-sustainable-yield-msy" class="nav-link" data-scroll-target="#the-concept-of-maximum-sustainable-yield-msy"><span class="header-section-number">12.3</span> The concept of Maximum Sustainable Yield (MSY)</a></li>
+  <li><a href="#harvesting-stochastic-populations" id="toc-harvesting-stochastic-populations" class="nav-link" data-scroll-target="#harvesting-stochastic-populations"><span class="header-section-number">12.4</span> Harvesting stochastic populations</a>
   <ul class="collapse">
-  <li><a href="#how-to-use-this-book" id="toc-how-to-use-this-book" class="nav-link" data-scroll-target="#how-to-use-this-book">How to use this book</a>
-  <ul class="collapse">
-  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
-  <li><a href="#how-to-contribute" id="toc-how-to-contribute" class="nav-link" data-scroll-target="#how-to-contribute">How to contribute?</a></li>
+  <li><a href="#harvesting-age--and-stage-structured-populations" id="toc-harvesting-age--and-stage-structured-populations" class="nav-link" data-scroll-target="#harvesting-age--and-stage-structured-populations"><span class="header-section-number">12.4.1</span> Harvesting age- and stage structured populations</a></li>
   </ul></li>
-  </ul></li>
+  <li><a href="#harvest-management-is-more-than-ecology" id="toc-harvest-management-is-more-than-ecology" class="nav-link" data-scroll-target="#harvest-management-is-more-than-ecology"><span class="header-section-number">12.5</span> Harvest management is more than ecology</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/ErlendNilsen/PopEcology_NordUni_booklet/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ErlendNilsen/PopEcology_NordUni_booklet/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/ErlendNilsen/PopEcology_NordUni_booklet/edit/main/Harvesting.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ErlendNilsen/PopEcology_NordUni_booklet/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Applied_population_ecology.html">Applied population ecology</a></li><li class="breadcrumb-item"><a href="./Harvesting.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Harvesting wild vertebrate populations</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Population Ecology</h1>
-<p class="subtitle lead">A gentle introduction using R</p>
+<h1 class="title"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Harvesting wild vertebrate populations</span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Erlend B. Nilsen <a href="https://orcid.org/0000-0002-5119-8331" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
-          </div>
-  </div>
     
   
     
@@ -287,31 +315,96 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-
-<section id="about-the-book" class="level1 unnumbered">
-<h1 class="unnumbered">About the book</h1><p><img src="cover2.jpg" title="Population Ecology" class="quarto-cover-image img-fluid"></p>
-<p>This book will serve as a digital compendium in ØKO2002 Population eecology at <a href="https://www.nord.no/en">Nord University</a>. The course is part of the bachelor education in <a href="https://www.nord.no/en/studies/nature-management-bachelors-programme">Nature Management</a>, and the students are (mostly) taking the course in their third study semester.</p>
-<p>By reading this booklet, you should get a good overview of the topic population ecology. As a next step there are many more specialized books that you can use to dig further into the topic. In general, it will cover the following topics:</p>
+<p>One classical application of population ecology theory is related to harvesting of wild vertebrate populations, including those that live in the oceans (i.e.&nbsp;fisheries!). In this chapter, the focus will be on harvesting of terrestrial vertebrate - including both various species of game birds as welll as mammals of various size and taxa. In the chapter, I will show how the theory surrounding harvest management have matured over the years, and now consists of mature and well-developed body of literature. Importantly, much of the development has happened in parallel in terrestrial ecology and in the fisheries. Marine fisheries are often associated with substantial economic interests, and thus for at least some marine fisheries substantial resources have been allocated to produce better models (and data) to support the quota setting process. The same situation applies to some terrestrial harvest management systems (e.g.&nbsp;moose management in Scandinavia), but there are also many hunted populations for which there is a lack of data and knowledge. We often refer to these systems as data deficient or data poor systems.</p>
+<section id="principles-of-sustainable-harvest" class="level2" data-number="12.1">
+<h2 data-number="12.1" class="anchored" data-anchor-id="principles-of-sustainable-harvest"><span class="header-section-number">12.1</span> Principles of sustainable harvest</h2>
+<p>Include statements from sustainability papers and Sutherland in wildlife biology. Discuss briefly harvestable surpluss and Norwegian law</p>
+</section>
+<section id="additive-and-compensatory-harvest" class="level2" data-number="12.2">
+<h2 data-number="12.2" class="anchored" data-anchor-id="additive-and-compensatory-harvest"><span class="header-section-number">12.2</span> Additive and compensatory harvest</h2>
+<p>Discuss compensation and additivity of harvest mortality (<a href="#fig-additivity" class="quarto-xref">Figure&nbsp;<span>12.1</span></a>).</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>data_mortality <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">Hm =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">50</span>, <span class="dv">100</span>), <span class="dv">3</span>), </span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>                         <span class="at">S =</span> <span class="fu">c</span>(<span class="fl">0.5</span>, <span class="fl">0.25</span>, <span class="dv">0</span>, <span class="fl">0.5</span>, <span class="fl">0.45</span>, <span class="dv">0</span>,  <span class="fl">0.5</span>, <span class="fl">0.5</span>, <span class="dv">0</span>), </span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>                         <span class="at">model =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">"Additive"</span>, </span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>                                       <span class="st">"Partial"</span>, </span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>                                       <span class="st">"Compensatory"</span>), </span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>                                  <span class="at">each =</span> <span class="dv">3</span>))</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>                        </span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> data_mortality, <span class="fu">aes</span>(<span class="at">x =</span> Hm, <span class="at">y =</span> S)) <span class="sc">+</span> </span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>      <span class="fu">geom_line</span>(<span class="at">size =</span> <span class="dv">2</span>, <span class="at">colour =</span><span class="st">"#A9C47F"</span>) <span class="sc">+</span> </span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>      <span class="fu">facet_wrap</span>(<span class="sc">~</span>model) <span class="sc">+</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>      <span class="fu">theme</span>(<span class="at">text =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">17</span>)) <span class="sc">+</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>      <span class="fu">ylab</span>(<span class="st">"Annual survival (S)"</span>) <span class="sc">+</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>      <span class="fu">xlab</span>(<span class="st">"Harvest mortality (%)"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-additivity" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-additivity-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Harvesting_files/figure-html/fig-additivity-1.png" class="img-fluid figure-img" width="960">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-additivity-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;12.1: Three contrasting hypothesis for the effects of harvest mortality on annual survival: Additive, partial compensation and full compensation, respctively. For illustrative purposes, it is assumed that the threshold c where mortality becomes additive in all models is located at 50% harvest mortality.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="the-concept-of-maximum-sustainable-yield-msy" class="level2" data-number="12.3">
+<h2 data-number="12.3" class="anchored" data-anchor-id="the-concept-of-maximum-sustainable-yield-msy"><span class="header-section-number">12.3</span> The concept of Maximum Sustainable Yield (MSY)</h2>
+<p>The concept of Maximum Sustainable Yield (MSY) dates back to the 1930-ties (refs)…</p>
+<p>The concept is tightly connected to the concept of density dependence, introduced in chapter 2.</p>
+<p>The theoretical yield peak is located exactly when the population size N is at 0.5 * K (<a href="#fig-MSY" class="quarto-xref">Figure&nbsp;<span>12.2</span></a>).</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>K <span class="ot">&lt;-</span> <span class="dv">500</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>r <span class="ot">&lt;-</span> <span class="fl">0.3</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>MSY_data <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">N =</span> <span class="fu">seq</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">500</span>), </span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>                   <span class="at">dN_dt =</span> r<span class="sc">*</span>N <span class="sc">*</span> (<span class="dv">1</span> <span class="sc">-</span> (N<span class="sc">/</span>K))) </span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> MSY_data, <span class="fu">aes</span>(<span class="at">x =</span> N, <span class="at">y =</span> dN_dt)) <span class="sc">+</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>              <span class="fu">geom_line</span>(<span class="at">size =</span> <span class="dv">2</span>, <span class="at">colour =</span><span class="st">"#A9C47F"</span>) <span class="sc">+</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>              <span class="co">#theme_minimal() +</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>              <span class="fu">theme</span>(<span class="at">text =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">15</span>)) <span class="sc">+</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>              <span class="fu">ylim</span>(<span class="dv">0</span>, <span class="fu">max</span>(MSY_data<span class="sc">$</span>dN_dt <span class="sc">+</span> <span class="dv">10</span>)) <span class="sc">+</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>              <span class="fu">xlab</span>(<span class="st">"Population size (N)"</span>) <span class="sc">+</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>              <span class="fu">ylab</span>(<span class="st">"Annual population increment (dN/dt)"</span>)  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-MSY" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-MSY-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Harvesting_files/figure-html/fig-MSY-1.png" class="img-fluid figure-img" width="480">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-MSY-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;12.2: MSY curve for a hypothetical population, assuming K = 500 and r = 0.3
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Explain why MSY was fragile and need to be further developed.</p>
+</section>
+<section id="harvesting-stochastic-populations" class="level2" data-number="12.4">
+<h2 data-number="12.4" class="anchored" data-anchor-id="harvesting-stochastic-populations"><span class="header-section-number">12.4</span> Harvesting stochastic populations</h2>
+<p>Discuss why stoachasticity matters for harvest models.</p>
+<p>The - tune in on contrasting three main types:</p>
 <ul>
-<li><p>Individuals and their adaptation to their environment</p></li>
-<li><p>The dynamics of populations</p></li>
-<li><p>Species interactions</p></li>
-<li><p>Applied population ecology</p></li>
+<li><p><strong>Constant quota</strong>: In this approach, the quota is fixed and remains the same in all years regardless of what the population size turns out to be.</p></li>
+<li><p><strong>Constant proportion</strong>: Also called proportional harvest. In this approach, the quota in terms of proportion of the population that is removed is constant. For instance, each year 30% of the population is removed through harvest.</p></li>
+<li><p><strong>Threshold harvesting</strong>: Under this approach, no hunting will be allowed if the population is below a predefined threshold. When the population size is above the threshold, harvest will take place. In the traditional form for threshold harvesting, the population will be harvested down to the threshold. In proportional threshold harvest</p></li>
 </ul>
-<p>The book is currently under construction, and many chapters are still only empty skeletons. For the time being, the book is not intended to replace the text book used in the course - but rather serve as a supplement. There is, however, one main part that is not well covered in the text book and for which this digital compendium will be the main source. This is part “Applied Population Ecology”. These chapters will cover some main application of concepts and theory from the science of population ecology, including harvest of wild vertebrate populations, and the construction of population viability analysis by the use of mathematical simulations. In addition, there is a short chapter about the methodology behind the IUCN red listing process, which relies on population ecology theory.</p>
-<section id="how-to-use-this-book" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="how-to-use-this-book">How to use this book</h2>
-<p>This booklet is created using Quarto in RStudio. As you can see, the R-code that produce the output (figures, tables, numbers etc) is displayed alongside with the more general text. The intention is that you should learn some basic R alongside your efforts to learn the core concepts in population ecology. At the end of each chapter, there is a set of exercises that you can use to check whether you have understood the content presented in the respective chapter.</p>
-<section id="section" class="level3">
-<h3 class="anchored" data-anchor-id="section"></h3>
+<section id="harvesting-age--and-stage-structured-populations" class="level3" data-number="12.4.1">
+<h3 data-number="12.4.1" class="anchored" data-anchor-id="harvesting-age--and-stage-structured-populations"><span class="header-section-number">12.4.1</span> Harvesting age- and stage structured populations</h3>
+<p>Describe how populations of (mainly) long-lived species will be dependent on the age- and sex composition of the harvest off take. Use simulations to showcase + perhaps some real data from moose or red deer in Norway.</p>
 </section>
-<section id="how-to-contribute" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="how-to-contribute">How to contribute?</h3>
-<p>There are several ways to contribute to improving this booklet. First, by showing up in the class and discussing the content with me and your class mates, you will give me valuable insight that can be used to improve the content. Second, you could send me an e-mail (erlend.b.nilsen@nord-no). Third, if you are familiar with GitHub you could either submit pull requests or raise an issue. The link to the GitHub repo could be found in the menu line to the right.</p>
+</section>
+<section id="harvest-management-is-more-than-ecology" class="level2" data-number="12.5">
+<h2 data-number="12.5" class="anchored" data-anchor-id="harvest-management-is-more-than-ecology"><span class="header-section-number">12.5</span> Harvest management is more than ecology</h2>
+<p>Discuss various studies of hunter efficiency under different conditions, and introduce the concept of Harvest Management Strategy Evaluation (MSE).</p>
 
 
-</section>
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -737,10 +830,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./Applied_population_ecology.html" class="pagination-link" aria-label="Applied population ecology">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Applied population ecology</span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./intro.html" class="pagination-link" aria-label="Introduction to population ecology">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction to population ecology</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./References.html" class="pagination-link" aria-label="References">
+        <span class="nav-page-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">References</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -749,4 +845,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ErlendNilsen/PopEcology_NordUni_booklet/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ErlendNilsen/PopEcology_NordUni_booklet/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ErlendNilsen/PopEcology_NordUni_booklet/edit/main/Harvesting.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ErlendNilsen/PopEcology_NordUni_booklet/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

@@ -4,16 +4,42 @@ project:
 
 book:
   title: "Population Ecology"
-  subtitle: "A gentle introduction"
-  author: "Erlend B. Nilsen"
-  date: "7.11.2024"
+  subtitle: "A gentle introduction using R"
+  author: 
+    - name: "Erlend B. Nilsen"
+      orcid: 0000-0002-5119-8331
+  repo-url: https://github.com/ErlendNilsen/PopEcology_NordUni_booklet
+  repo-branch: main
+  repo-actions: [edit, issue]
+  cover-image: cover2.jpg
+  
   chapters:
     - index.qmd
     - intro.qmd
-    - The_organism.qmd
-    - The_population.qmd
-    - Species_interactions.qmd
-    - Applied_popec.qmd
+    
+    - part: The_organism.qmd
+      chapters:
+      - Adaptation_Selection.qmd
+      - Life_histories.qmd
+      - Movement_ecology.qmd
+    
+    - part: The_population.qmd
+      chapters:
+      - Population_growth.qmd
+      - Density_dependence.qmd
+      - Age_structured.qmd
+      - Metapopulation_dynamics.qmd
+      
+    - part: Species_interactions.qmd
+      chapters: 
+        - Predation.qmd
+        - Competition.qmd
+        - Non_lethal.qmd
+    
+    - part: Applied_population_ecology.qmd
+      chapters: 
+        - Harvesting.qmd
+        
     - References.qmd
 
 bibliography: references.bib
@@ -26,3 +52,4 @@ format:
 
 editor: visual
 
+author-meta: "Erlend B. Nilsen, Nord University"
